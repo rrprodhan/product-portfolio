@@ -1,1 +1,18 @@
-<p>product-card works!</p>
+<div class="product-card-list-container">
+  @for (product of filteredProductList(); track $index) {
+    <mat-card class="product-card" appearance="outlined">
+      <mat-card-content>
+        <div class="card-content">
+          <div>
+            <h3>{{ product.name }}</h3>
+            <div class="chips-container">
+              <mat-chip>{{ product.category }}</mat-chip>
+            </div>
+            <p>{{ product.description }}</p>
+          </div>
+          <div>Price: {{ product.price | currency:'USD' }}</div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  }
+</div>

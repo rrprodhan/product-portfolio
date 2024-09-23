@@ -1,1 +1,27 @@
-<app-product-card></app-product-card>
+<div class="page-container">
+  <div class="header">
+    <h1>Products</h1>
+    <div class="filter-section">
+      <mat-form-field appearance="outline">
+        <mat-label>Search by name</mat-label>
+        <input [formControl]="searchFormControl" matInput />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Select Category</mat-label>
+        <mat-select
+          [(value)]="selectedCategory"
+          (selectionChange)="onCategoryChange($event)"
+        >
+          <mat-option value="All Products">All Products</mat-option>
+          @for (category of productCategories; track $index) {
+            <mat-option value="{{ category }}">{{ category }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <app-product-card
+    [productList]="filteredProductList()"
+    [selectedCategory]="selectedCategory()"
+  ></app-product-card>
+</div>

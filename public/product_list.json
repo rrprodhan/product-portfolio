@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Wireless Headphones",
+        "price": 99.99,
+        "description": "Over-ear wireless headphones with noise cancellation",
+        "category": "Electronics"
+    },
+    {
+        "name": "Espresso Coffee Maker",
+        "price": 149.99,
+        "description": "Automatic espresso machine with milk frother",
+        "category": "Appliances"
+    },
+    {
+        "name": "Yoga Mat",
+        "price": 29.99,
+        "description": "Non-slip yoga mat for all fitness levels",
+        "category": "Fitness"
+    },
+    {
+        "name": "Smartphone Stand",
+        "price": 19.99,
+        "description": "Adjustable stand for smartphones and tablets",
+        "category": "Accessories"
+    },
+    {
+        "name": "Bluetooth Speaker",
+        "price": 49.99,
+        "description": "Portable waterproof Bluetooth speaker",
+        "category": "Electronics"
+    }
+]
