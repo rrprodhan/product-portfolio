@@ -3,11 +3,18 @@ import { MatCardModule } from "@angular/material/card";
 import { AsyncPipe, CurrencyPipe } from "@angular/common";
 import { IProduct } from "../../models/IProduct";
 import { MatChipsModule } from "@angular/material/chips";
+import { ResizableDirective } from "../../directives/resizable.directive";
 
 @Component({
   selector: "app-product-card",
   standalone: true,
-  imports: [MatCardModule, AsyncPipe, MatChipsModule, CurrencyPipe],
+  imports: [
+    MatCardModule,
+    AsyncPipe,
+    MatChipsModule,
+    CurrencyPipe,
+    ResizableDirective,
+  ],
   templateUrl: "./product-card.component.html",
   styleUrl: "./product-card.component.scss",
 })
