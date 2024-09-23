@@ -24,6 +24,7 @@ export class ResizableDirective {
     this.renderer.setStyle(resizer, "position", "absolute");
     this.renderer.setStyle(resizer, "right", "0");
     this.renderer.setStyle(resizer, "bottom", "0");
+    this.renderer.setStyle(resizer, "margin", "10px");
     this.renderer.setStyle(resizer, "cursor", "nwse-resize");
 
     this.renderer.appendChild(this.el.nativeElement, resizer);
