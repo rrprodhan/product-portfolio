@@ -19,18 +19,19 @@
 
 mat-form-field {
   width: 100%;
+  min-width: 298px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 677px) {
   mat-form-field {
     width: 48%;
+    min-width: 298px;
   }
 }
 
 @media (min-width: 1024px) {
   mat-form-field {
     width: 48%;
+    min-width: 298px;
   }
 }
-
-
